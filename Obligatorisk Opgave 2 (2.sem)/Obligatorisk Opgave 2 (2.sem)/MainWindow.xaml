@@ -1,0 +1,38 @@
+﻿<Window x:Class="Obligatorisk_Opgave_2__2.sem_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Obligatorisk_Opgave_2__2.sem_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Controlpanel" VerticalAlignment="Bottom" Margin="300,0,0,373" Height="36" Width="158" FontWeight="Bold" TextAlignment="Center" FontSize="24"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="138" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="26,78,0,0"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="138" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="246,78,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="26,78,0,0" RenderTransformOrigin="0.887,5.706" Width="200" Height="23" FontWeight="Bold" TextAlignment="Center" FontSize="14"><Run Text="Ubuntu"/><Run Text=" - Server"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="246,78,0,0" RenderTransformOrigin="0.887,5.706" Width="200" Height="23" FontWeight="Bold" TextAlignment="Center" FontSize="14"><Run Text="CentOS"/><Run Text=" - Server"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Status:" VerticalAlignment="Top" Margin="42,117,0,0" FontSize="14" RenderTransformOrigin="0.547,0.449"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="IP:" VerticalAlignment="Top" Margin="42,138,0,0" RenderTransformOrigin="0.545,0.526" FontSize="14" Width="40"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Status:" VerticalAlignment="Top" Margin="260,117,0,0" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="IP:" VerticalAlignment="Top" Margin="260,138,0,0" RenderTransformOrigin="0.545,0.526" FontSize="14" Width="40"/>
+        <Button x:Name="RebootsUbuntu" Content="Reboot" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="42,186,0,0" Click="RebootUbuntu"/>
+        <Button x:Name="More_Info" Content="More Info" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="134,186,0,0" Click="InfoUbuntu"/>
+        <Button x:Name="CentOSReboot" Content="Reboot" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="260,186,0,0" Click="RebootCentOS"/>
+        <Button Content="More Info" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="355,186,0,0" Click="InfoCentOS"/>
+        <TextBlock x:Name="UbuntuIP" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="64,138,0,0" Width="145" FontSize="14" TextAlignment="Right" />
+        <TextBlock x:Name="CentOSIP" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="285,138,0,0" Width="145" FontSize="14" TextAlignment="Right"/>
+        <Ellipse x:Name="UbuntuEllipse" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="18" Margin="187,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="18"/>
+        <Ellipse x:Name="CentOSEllipse" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="18" Margin="412,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="18"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="138" Stroke="Black" VerticalAlignment="Top" Width="200" Margin="26,235,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="26,235,0,0" RenderTransformOrigin="0.887,5.706" Width="200" Height="23" FontWeight="Bold" TextAlignment="Center" FontSize="14"><Run Text="Debian"/><Run Text=" - Server"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Status:" VerticalAlignment="Top" Margin="42,274,0,0" FontSize="14" RenderTransformOrigin="0.547,0.449"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="IP:" VerticalAlignment="Top" Margin="42,295,0,0" RenderTransformOrigin="0.545,0.526" FontSize="14" Width="40"/>
+        <Button x:Name="DebianReboots" Content="Reboot" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="42,343,0,0" Click="DebianReboot"/>
+        <Button x:Name="DebianInfos" Content="More Info" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="134,343,0,0" Click="DebianInfo"/>
+        <TextBlock x:Name="DebianIP" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="64,295,0,0" Width="145" FontSize="14" TextAlignment="Right" />
+        <Ellipse x:Name="DebianEllipse" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="18" Margin="187,277,0,0" Stroke="Black" VerticalAlignment="Top" Width="18"/>
+
+
+    </Grid>
+</Window>
